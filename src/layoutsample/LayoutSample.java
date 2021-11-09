@@ -13,6 +13,7 @@ public class LayoutSample extends Application {
     }
 
     @Override
+
     public void start(Stage primaryStage){
 //        Hier werden 2 Buttons definiert
         Button btn = new Button();
