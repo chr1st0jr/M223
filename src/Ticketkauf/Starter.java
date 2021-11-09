@@ -53,7 +53,6 @@ public class Starter extends Application {
         gridPane.add(new Label("Preis"), 0,5);
         double value = (Integer) anzahl.getValue();
         preis = value * 20.00;
-        gridPane.add(new (preis), 1,5);
 
 
 
