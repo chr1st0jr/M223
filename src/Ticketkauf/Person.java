@@ -1,16 +1,18 @@
 package Ticketkauf;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Person {
+    int ID;
     String name;
     String vorname;
-    Date geburtsdatum;
+    LocalDate geburtsdatum;
     Boolean volljaehrig;
     Integer anzahl;
     Double preis;
 
-    public Person(String name, String vorname, Date geburtsdatum, Boolean volljaehrig, Integer anzahl, Double preis) {
+    public Person(int ID, String name, String vorname, LocalDate geburtsdatum, Boolean volljaehrig, Integer anzahl, Double preis) {
+        this.ID = ID;
         this.name = name;
         this.vorname = vorname;
         this.geburtsdatum = geburtsdatum;
@@ -27,7 +29,7 @@ public class Person {
         return vorname;
     }
 
-    public Date getGeburtsdatum() {
+    public LocalDate getGeburtsdatum() {
         return geburtsdatum;
     }
 
@@ -51,7 +53,7 @@ public class Person {
         this.vorname = vorname;
     }
 
-    public void setGeburtsdatum(Date geburtsdatum) {
+    public void setGeburtsdatum(LocalDate geburtsdatum) {
         this.geburtsdatum = geburtsdatum;
     }
 
@@ -65,5 +67,13 @@ public class Person {
 
     public void setPreis(Double preis) {
         this.preis = preis;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 }
