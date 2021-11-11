@@ -53,7 +53,7 @@ public class MyJDBC {
     //
     public int insert(Person p) {
         Connection connection = con();
-        try {
+     /*   try {
 
         }
             if (!con().isClosed()) {
@@ -61,11 +61,13 @@ public class MyJDBC {
               "Geburtsdatum, Over18, Anzahl, Preis) values ( ?, ?, ?, ?, ?, ?)");
 
               pstmt.setInt(1,p.getID());
-
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
         return int;
 
+    }*/
+        return 0;
     }
+}
