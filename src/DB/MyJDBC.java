@@ -9,6 +9,7 @@ import java.sql.SQLException;
 
 public class MyJDBC {
 
+
     public Connection con() {
         Connection connection = null;
         try {
@@ -24,6 +25,8 @@ public class MyJDBC {
             System.out.println("SQL connection failed");
             ;
         }
+        System.out.println("User: Root\n" +
+                "Password: ''");
         return connection;
     }
 
@@ -70,4 +73,5 @@ public class MyJDBC {
     }*/
         return 0;
     }
+
 }
