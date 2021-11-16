@@ -50,8 +50,8 @@ public class Model {
         Beschreibung = beschreibung;
     }
 
-    public Date getDatum() {
-        return Date.valueOf(Datum);
+    public LocalDate getDatum() {
+        return Datum;
     }
 
     public void setDatum(LocalDate datum) {

@@ -26,6 +26,7 @@ public class Connector {
               connection = DriverManager.getConnection("jdbc:mysql://192.168.163.1/m223", "root1", "1234");
         } catch (SQLException s) {
             System.out.println("SQL connection failed");
+
         }
         return connection;
     }

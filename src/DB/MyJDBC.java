@@ -25,8 +25,6 @@ public class MyJDBC {
             System.out.println("SQL connection failed");
             ;
         }
-        System.out.println("User: Root\n" +
-                "Password: ''");
         return connection;
     }
 
