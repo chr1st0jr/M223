@@ -10,6 +10,13 @@ public class Model {
     String Beschreibung;
     LocalDate Datum;
 
+    public Model(String artikel, double preis, int menge, String beschreibung, LocalDate datum) {
+        Artikel = artikel;
+        Preis = preis;
+        Menge = menge;
+        Beschreibung = beschreibung;
+        Datum = datum;
+    }
 
     public String getArtikel() {
         return Artikel;

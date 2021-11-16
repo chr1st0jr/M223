@@ -23,13 +23,10 @@ public class Connector {
         }
         try {
             if (connection == null || connection.isClosed())
-              connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/m223", "root", "");
+              connection = DriverManager.getConnection("jdbc:mysql://192.168.163.1/m223", "root1", "1234");
         } catch (SQLException s) {
             System.out.println("SQL connection failed");
-            ;
         }
-        System.out.println("User: Root\n" +
-                "Password: ''");
         return connection;
     }
 }
