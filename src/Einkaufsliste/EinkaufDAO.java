@@ -1,5 +1,6 @@
 package Einkaufsliste;
 
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -23,7 +24,7 @@ public class EinkaufDAO{
         psinsert.setDouble(2, model.getPreis());
         psinsert.setInt(3, model.getMenge());
         psinsert.setString(4, model.getBeschreibung());
-        psinsert.setDate(5, model.getDatum());
+        psinsert.setDate(5, Date.valueOf(model.getDatum()));
         psinsert.executeUpdate();
 
 

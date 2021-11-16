@@ -26,10 +26,8 @@ public class Connector {
               connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/m223", "root", "");
         } catch (SQLException s) {
             System.out.println("SQL connection failed");
-            ;
+
         }
-        System.out.println("User: Root\n" +
-                "Password: ''");
         return connection;
     }
 }
