@@ -38,7 +38,6 @@ public class Ticket extends Application {
         borderPane.setCenter(gridPane);
         gridPane.setPadding(new Insets(20, 20,20,20));
 
-
         gridPane.add(new Label("Event"),0,0);
         ListView<String> list = new ListView<String>();
         list.setPrefSize(250, 100);

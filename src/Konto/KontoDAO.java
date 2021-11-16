@@ -3,7 +3,7 @@ package Konto;
 import java.sql.*;
 
 public class KontoDAO {
-    //Bezug von x Franken (z.B. 50)
+
 
     public Connection con() {
         Connection connection = null;
