@@ -28,7 +28,6 @@ public class EinkaufDAO{
         psinsert.setDate(5, Date.valueOf(model.getDatum()));
         psinsert.executeUpdate();
 
-
         connector.con().commit();
 
         return anzahl;
