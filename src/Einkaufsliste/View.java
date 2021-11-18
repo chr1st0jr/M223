@@ -12,7 +12,6 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.time.LocalDate;
 
 public class View extends Application {
@@ -72,13 +71,13 @@ public class View extends Application {
 
                 Connection con = Connector.getConnector().con();
 
-                Model model = new Model();
+                /*Model model = new Model();
                 EinkaufDAO einkaufDAO = new EinkaufDAO();
                 try {
                     einkaufDAO.insert(model);
                 } catch (SQLException e) {
                     e.printStackTrace();
-                }
+                }*/
 
                 /*System.out.println(model.getArtikel());
                 System.out.println(model.getPreis());
