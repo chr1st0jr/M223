@@ -97,7 +97,7 @@ public class Starter extends Application {
                 Double price = anzahl.getValue() * preis;
 
 
-                Person person = new Person(pID, lastname, firstname, bday, volljaehrig, anz, price);
+                Person person = new Person();
 
                 System.out.println(person.getID());
                 System.out.println(person.getName());

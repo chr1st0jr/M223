@@ -11,15 +11,6 @@ public class Person {
     Integer anzahl;
     Double preis;
 
-    public Person(int ID, String name, String vorname, LocalDate geburtsdatum, Boolean volljaehrig, Integer anzahl, Double preis) {
-        this.ID = ID;
-        this.name = name;
-        this.vorname = vorname;
-        this.geburtsdatum = geburtsdatum;
-        this.volljaehrig = volljaehrig;
-        this.anzahl = anzahl;
-        this.preis = preis;
-    }
 
     public String getName() {
         return name;
