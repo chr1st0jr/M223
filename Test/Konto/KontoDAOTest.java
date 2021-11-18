@@ -7,7 +7,9 @@ import static org.junit.Assert.assertTrue;
 public class KontoDAOTest {
     @Test
     public void bezug() {
-        iKontoDAO dao = new KontoDAO();
+//      Hier muss man die Klasse instanziieren, achtung nicht das interface!
+//        iKontoDAO dao = new KontoDAO();
+        iKontoDAO dao = new VerbesserteKontoDAO();
         boolean b = dao.bezug(5,2345);
         assertTrue(b);
     }
