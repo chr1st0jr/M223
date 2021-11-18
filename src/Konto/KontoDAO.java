@@ -2,7 +2,7 @@ package Konto;
 
 import java.sql.*;
 
-public class KontoDAO {
+public class KontoDAO implements iKontoDAO{
 
 
     public Connection con() {
@@ -24,6 +24,7 @@ public class KontoDAO {
         return connection;
     }
 
+    @Override
     public boolean bezug(int KontoNr, double betrag){
         double kontostand;
 

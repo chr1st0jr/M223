@@ -13,6 +13,7 @@ public class EinkaufDAO{
 
         Connector connector = Connector.getConnector();
 
+
         PreparedStatement psinsert = null;
         try {
             psinsert = connector.con().prepareStatement("insert into tbl_einkaufsliste (Artikel, Preis, Menge, Beschreibung, Datum)" +
