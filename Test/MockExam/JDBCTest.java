@@ -23,7 +23,7 @@ public class JDBCTest {
     public void getConnection() {
         JDBC con = new JDBC();
         Connection res = con.getConnection();
-        assertEquals("hallo", "\"jdbc:mysql://localhost:3306/m223\",\"root\",\"\"", res);
+        assertEquals("hallo", "\"jdbc:mysql://localhost:3306/LB3\",\"root\",\"\"", res);
 
     }
 
